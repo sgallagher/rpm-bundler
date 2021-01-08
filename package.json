@@ -1,10 +1,10 @@
 {
-  "name": "rpm-bundler",
+  "name": "nodejs-packaging-bundler",
   "version": "0.1.0",
   "description": "A CLI tool to automatically download all bundled NPM modules so that they can be packaged into an RPM predictably.",
   "main": "bin/cli.js",
   "bin": {
-    "rpm-bundler": "./bin/cli.js"
+    "nodejs-packaging-bundler": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,12 +19,19 @@
     "bundle",
     "packaging",
     "fedora",
-    "redhat"
+    "redhat",
+    "centos"
   ],
   "author": "Stephen Gallagher <sgallagh@redhat.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sgallagher/rpm-bundler/issues"
   },
-  "homepage": "https://github.com/sgallagher/rpm-bundler#readme"
+  "homepage": "https://github.com/sgallagher/rpm-bundler#readme",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "tar": "^6.1.0",
+    "temp": "^0.9.4",
+    "yargs": "^16.2.0"
+  }
 }
